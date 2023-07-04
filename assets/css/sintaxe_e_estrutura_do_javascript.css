@@ -37,6 +37,17 @@ b {
     --yellow2: #dcdcaa;
 }
 
+::-webkit-scrollbar {
+    background-color: var(--black2);
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    width: 10px;
+    background-color: #72727247;
+}
+
 /* container */
 .container h1 {
     color: var(--blue3);
@@ -120,13 +131,13 @@ b {
     padding: 0 0 10px 0;
 }
 
-.cod_1 img{
+.cod_1 img {
     padding: 0;
     margin: 10px 0;
     width: 100%;
 }
 
-.cod_2 img{
+.cod_2 img {
     padding: 0;
     margin: 10px 0;
     width: 60%;

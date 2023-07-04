@@ -6,12 +6,22 @@
     position: absolute;
 }
 
-#js_icon {
+.container-js {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.container-js p {
+    padding-top: 10px;
+}
+
+/* #js_icon {
     max-width: 120px;
     width: 100%;
-    animation: asd 2s linear  infinite;
+    animation: asd 2s linear infinite;
     display: block;
-}
+} */
 
 @keyframes identifier {
     0% {
@@ -23,8 +33,34 @@
     }
 
 }
+
 @keyframes asd {
     0% {
         transform: rotate(0deg);
+    }
+}
+
+/*  */
+
+.js-icon {
+    max-width: 120px;
+    width: 100%;
+    animation: asd 2s linear infinite;
+    display: block;
+
+    transition: transform 2s linear;
+}
+
+.js-icon.rotate {
+    animation: rotateAnimation 2s linear infinite;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }

@@ -223,6 +223,39 @@
     <div class="container funcoes_e_escopo">
         <aside class="funcoes_e_escopo_1">
             <h3>Funções e escopo</h3>
+            <p>Funções são blocos de código reutilizáveis que podem ser chamados para executar uma tarefa específica.
+                Elas são usadas para agrupar um conjunto de instruções e podem receber parâmetros (dados de entrada) e
+                retornar um valor como resultado.
+            </p>
+            <p>O escopo em JavaScript determina a visibilidade e acessibilidade das variáveis, funções e objetos em
+                diferentes partes do código. Existem dois tipos principais de escopo em JavaScript: escopo global e
+                escopo local.
+            </p>
+            <h5>Escopo Global</h5>
+            <p>Variáveis declaradas fora de qualquer função têm escopo global, o que significa que podem ser acessadas
+                de qualquer lugar do código, inclusive de dentro de funções.
+            </p>
+            <p>Exemplo: </p>
+            <div class="cod_1 container" style="padding: 0;">
+                <img src="./assets/img/code_11.png" alt="">
+            </div>
+            <h5>Escopo Local</h5>
+            <p> Variáveis declaradas dentro de uma função têm escopo local e só podem ser acessadas dentro
+                dessa função. Elas não são visíveis fora da função.
+            <p>Exemplo:</p>
+
+            <div class="cod_1 container" style="padding: 0;">
+                <img src="./assets/img/code_12.png" alt="">
+            </div>
+            <p>Além disso, é importante entender que funções podem acessar variáveis definidas em um escopo superior,
+                mas o contrário não é verdadeiro. Isso é conhecido como closure.</p>
+            <p>Exemplo: </p>
+            <div class="cod_1 container" style="padding: 0;">
+                <img src="./assets/img/code_13.png" alt="">
+            </div>
+            <p>No exemplo acima, a função interna <b>innerFunction()</b> tem acesso à variável <b>outerVariable</b>
+                definida na função
+                externa <b>outerFunction()</b>.</p>
         </aside>
     </div>
 
