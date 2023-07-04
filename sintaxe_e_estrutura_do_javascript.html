@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis e tipos de dados</title>
+    <link rel="shortcut icon" href="assets/favicon/js.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/sintaxe_e_estrutura_do_javascript.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="banner">
+        <h1>Sintaxe e estrutura do JavaScript:</h1>
+    </div>
+
+    <!-- navbar -->
+    <div class="container">
+        <div class="navbar">
+            <p class="navbar_1">Variaveis e Tipos de dados</p>
+            <p class="navbar_2">Operadores</p>
+            <p class="navbar_3">Estruturas de controle</p>
+            <p class="navbar_4">Funções e escopo</p>
+        </div>
+    </div>
+
+    <!-- Variaveis tipos de dados -->
+    <div class="container variaveis_tipos_de_dados">
+        <aside class="variaveis">
+            <h3>Variáveis</h3>
+            <p>Uma variável em programação é um nome simbólico que representa um local de armazenamento para dados. Ela
+                permite que você armazene, acesse e manipule valores durante a execução de um programa.</p>
+
+            <p>Em JavaScript, existem três palavras-chave principais para declarar variáveis: <b>var</b>, <b>let</b> e
+                <b>const</b>. Vamos explorar cada uma delas e fornecer exemplos de uso:
+            </p>
+
+            <h5>var</h5>
+            <p>A palavra-chave <b>var</b> foi a forma tradicional de declarar variáveis em JavaScript. Ela tem
+                escopo de função ou, se declarada fora de uma função, escopo global. Isso significa que uma variável
+                declarada com <b>var</b> é acessível em toda a função em que foi declarada ou, se for global, em todo o
+                programa. No entanto, o escopo de var não é limitado a um bloco de código específico. O <b>var</b> sofre
+                elevação (hoisting), o que significa que a declaração da variável é movida para o topo do seu escopo
+                antes da execução do código.
+            </p>
+            <p>Exemplo:</p>
+            <div class="cod_1 container" style="padding: 0;">
+                <img src="./assets/img/code_1.png" alt="">
+            </div>
+            <h5>let</h5>
+            <p>A palavra-chave <b>let</b> é usada para declarar variáveis com escopo de bloco em JavaScript. Com o
+                <b>let</b>, você pode criar variáveis que são acessíveis apenas dentro do bloco em que foram declaradas.
+                Essas variáveis não são elevadas (hoisted) para o topo do escopo e não podem ser redeclaradas no mesmo
+                escopo. O let é útil em loops for para evitar problemas de escopo.
+            </p>
+            <p>Exemplo:</p>
+            <div class="cod_1 container" style="padding: 0;">
+                <img src="./assets/img/code_2.png" alt="">
+            </div>
+            <h5>const</h5>
+            <p>A palavra-chave <b>const</b> também foi introduzida no ES6 e é usada para declarar constantes em
+                JavaScript. Uma constante é uma variável com um valor imutável, ou seja, seu valor não pode ser alterado
+                após a sua atribuição inicial. As constantes também têm escopo de bloco e não sofrem elevação
+                (hoisting). Elas devem ser declaradas e inicializadas ao mesmo tempo, e não podem ser reatribuídas a
+                outro valor posteriormente.</p>
+            <p>Exemplo:</p>
+            <div class="cod_1 container" style="padding: 0;">
+                <img src="./assets/img/code_3.png" alt="">
+            </div>
+            <p>Em resumo, <b>var</b> é a forma mais antiga de declarar variáveis em JavaScript com escopo de função ou
+                global, <b>let</b> é usada para declarar variáveis com escopo de bloco e <b>const</b> é usada para
+                declarar constantes com valor imutável. Cada uma dessas palavras-chave tem diferentes comportamentos em
+                relação ao escopo e à reatribuição de valores.</p>
+        </aside>
+        <aside class="tipos_de_dados">
+            <h3>Tipos de dados</h3>
+            <p>Tipos de dados são categorias que definem o tipo de valor que uma variável ou uma expressão pode
+                armazenar ou manipular em um programa. Os tipos de dados ajudam a determinar o comportamento e as
+                operações que podem ser realizadas com os valores.</p>
+            <p>Em JavaScript, alguns tipos de dados comuns incluem:</p>
+            <h5>Números (Number)</h5>
+            <p>Representam valores numéricos, como inteiros e números de ponto flutuante (decimais).
+                Por exemplo: 5, 3.14, -10.</p>
+            <h5>Strings</h5>
+            <p>Representam sequências de caracteres. São definidas entre aspas simples ou duplas. Por exemplo:
+                "Olá", 'Mundo', "123".</p>
+            <h5>Booleanos (Boolean)</h5>
+            <p>Representam os valores lógicos verdadeiro (true) e falso (false). São frequentemente
+                usados em expressões condicionais. Por exemplo: true, false.</p>
+            <h5>Arrays</h5>
+            <p>Representam coleções ordenadas de valores, que podem ser de qualquer tipo de dados. São definidos
+                usando colchetes [] e os elementos são separados por vírgulas. Por exemplo: [1, 2, 3], ['a', 'b', 'c'].
+            </p>
+            <h5>Objetos (Object)</h5>
+            <p>São estruturas de dados que permitem agrupar propriedades e métodos relacionados em um
+                único objeto. As propriedades são definidas como pares chave-valor, separados por vírgulas e delimitados
+                por chaves {}. Por exemplo: { nome: 'João', idade: 30 }.</p>
+            <h5>Null</h5>
+            <p>Representa a ausência intencional de qualquer valor ou objeto. É um valor especial que indica a
+                ausência de um valor válido. Por exemplo: null.</p>
+            <h5>Undefined</h5>
+            <p>Indica que uma variável foi declarada, mas ainda não foi atribuído nenhum valor a ela. É o
+                valor padrão para variáveis não inicializadas. Por exemplo: undefined.</p>
+        </aside>
+    </div>
+
+    <!-- operadores -->
+    <div class="container operadores">
+        <aside class="operadores_1">
+            <h3>Operadores</h3>
+
+            <p>Os operadores em JavaScript são símbolos especiais que executam operações em valores e retornam um
+                resultado. Eles são usados para realizar cálculos matemáticos, comparações, atribuições, lógica booleana
+                e muito mais.</p>
+
+            <p>Existem vários tipos de operadores em JavaScript:</p>
+
+            <p>
+            <h5>Operadores Aritméticos: </h5>Realizam operações matemáticas, como adição (+), subtração (-),
+            multiplicação (*), divisão (/) e resto da divisão (%).</p>
+
+            <p>
+            <h5>Operadores de Atribuição: </h5>Atribuem um valor a uma variável, utilizando o símbolo de igual (=), e
+            também podem ser combinados com operadores aritméticos para realizar operações e atribuir o resultado à
+            variável (ex.: +=, -=, *=, /=).</p>
+
+            <p>
+            <h5>Operadores de Comparação: </h5>Compararam dois valores e retornam um valor booleano (verdadeiro ou
+            falso). Exemplos incluem igual a (==), estritamente igual a (===), diferente de (!=), estritamente diferente
+            de (!==), maior que (>), menor que (<), maior ou igual a (>=) e menor ou igual a (<=).< /p>
+
+                    <p>
+                    <h5>Operadores Lógicos: </h5>São usados para combinar expressões lógicas e retornar um valor
+                    booleano. Os operadores lógicos incluem o AND lógico (&&), o OR lógico (||) e a negação lógica (!).
+                    </p>
+
+                    <p>
+                    <h5>Operadores de Concatenação de Strings: </h5>São usados para concatenar strings, usando o
+                    operador de adição (+).</p>
+
+                    <p>
+                    <h5>Operador Ternário: </h5>É uma forma compacta de escrever uma instrução condicional. O operador
+                    ternário (<b>condition ? expression1 : expression2</b>) avalia a condição e retorna a
+                    <b>expression1</b> se a condição for verdadeira e <b>expression2</b> se for falsa.</p>
+
+                    <p>
+                    <h5>Operadores de Acesso a Propriedades: </h5>Permitem acessar as propriedades de um objeto. O
+                    operador ponto (.) e o operador de colchetes ([]) são usados para acessar propriedades de objetos.
+                    </p>
+        </aside>
+    </div>
+
+    <!-- Estruturas de controle -->
+    <div class="container estruturas_de_controle">
+        <aside class="estruturas_de_controle_1">
+            <h3>Estruturas de controle</h3>
+            <p>As estruturas de controle em JavaScript permitem controlar o fluxo de execução do programa com base em
+                condições ou repetições. Elas são fundamentais para tomar decisões e executar determinadas ações com
+                base em diferentes cenários. Aqui estão as principais estruturas de controle em JavaScript:</p>
+            <h5>Estruturas de controle condicional:</h5>
+            <ul>
+                <li><b>If-else:</b>Executa um bloco de código se uma condição for verdadeira e outro bloco se for falsa.
+                </li>
+                Exemplo:
+                <div class="cod_2 container" style="padding: 0;">
+                    <img src="./assets/img/code_4.png" alt="">
+                </div>
+                <li><b>Switch:</b>Permite testar diferentes casos e executar blocos de código com base no valor de uma
+                    expressão.
+                </li>
+                Exemplo:
+                <div class="cod_2 container" style="padding: 0;">
+                    <img src="./assets/img/code_5.png" alt="">
+                </div>
+
+            </ul>
+            <h5>Estruturas de repetição:</h5>
+            <ul>
+                <li><b>For:</b>Executa um bloco de código um número específico de vezes.</li>
+                Exemplo:
+                <div class="cod_2 container" style="padding: 0;">
+                    <img src="./assets/img/code_6.png" alt="">
+                </div>
+                <li><b>While:</b>Executa um bloco de código enquanto uma condição for verdadeira.
+                </li>
+                Exemplo:
+                <div class="cod_2 container" style="padding: 0;">
+                    <img src="./assets/img/code_7.png" alt="">
+                </div>
+                <li><b>Do-while:</b>Executa um bloco de código pelo menos uma vez e, em seguida, continua repetindo
+                    enquanto uma condição for verdadeira.
+                </li>
+                Exemplo:
+                <div class="cod_2 container" style="padding: 0;">
+                    <img src="./assets/img/code_8.png" alt="">
+                </div>
+
+            </ul>
+            <h5>Estrutura de controle de desvio:</h5>
+            <ul>
+                <li><b>Break:</b>Encerra a execução de um loop ou um bloco de switch.</li>
+                Exemplo:
+                <div class="cod_2 container" style="padding: 0;">
+                    <img src="./assets/img/code_9.png" alt="">
+                </div>
+                <li><b>Continue:</b>Interrompe a iteração atual de um loop e continua para a próxima iteração.
+                </li>
+                Exemplo:
+                <div class="cod_2 container" style="padding: 0;">
+                    <img src="./assets/img/code_10.png" alt="">
+                </div>
+            </ul>
+            <p>Essas estruturas de controle permitem que você tome decisões e controle o fluxo de execução do seu código
+                JavaScript com base em diferentes condições e repetições. Elas são poderosas ferramentas para escrever
+                programas mais flexíveis e dinâmicos.</p>
+        </aside>
+    </div>
+
+    <!-- Funções e escopo -->
+    <div class="container funcoes_e_escopo">
+        <aside class="funcoes_e_escopo_1">
+            <h3>Funções e escopo</h3>
+        </aside>
+    </div>
+
+    <!-- footer -->
+    <footer class="container">
+        <p>© Estudos de JavaScript 2023 •
+            <a target="_blank" href="https://github.com/JuanKaue1" title="Meu Github">Github</a> •
+            <a target="_blank" href="https://www.linkedin.com/in/juan-kau%C3%AA-724076268/"
+                title="Meu Linkedin">Linkedin</a> •
+            <a target="_blank" href="https://www.instagram.com/juank.png/" title="Meu Instagram">Instagram</a>
+        </p>
+    </footer>
+    <!-- script -->
+
+    <script src="./assets/js/sintaxe_e_estrutura_do_javascript.js"></script>
+</body>
+
+</html>
