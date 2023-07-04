@@ -1,0 +1,30 @@
+.container-js {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    position: absolute;
+}
+
+#js_icon {
+    max-width: 120px;
+    width: 100%;
+    animation: asd 2s linear  infinite;
+    display: block;
+}
+
+@keyframes identifier {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+@keyframes asd {
+    0% {
+        transform: rotate(0deg);
+    }
+}
