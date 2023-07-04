@@ -13,15 +13,16 @@
 }
 
 .container-js p {
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
-/* #js_icon {
+#js_icon {
     max-width: 120px;
     width: 100%;
-    animation: asd 2s linear infinite;
+    animation: identifier 2s linear infinite;
     display: block;
-} */
+    cursor: pointer;
+}
 
 @keyframes identifier {
     0% {
@@ -32,35 +33,4 @@
         transform: rotate(360deg);
     }
 
-}
-
-@keyframes asd {
-    0% {
-        transform: rotate(0deg);
-    }
-}
-
-/*  */
-
-.js-icon {
-    max-width: 120px;
-    width: 100%;
-    animation: asd 2s linear infinite;
-    display: block;
-
-    transition: transform 2s linear;
-}
-
-.js-icon.rotate {
-    animation: rotateAnimation 2s linear infinite;
-}
-
-@keyframes rotateAnimation {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
 }
