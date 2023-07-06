@@ -2,9 +2,13 @@ const navbar_1 = document.querySelector('.navbar_1');
 const navbar_2 = document.querySelector('.navbar_2');
 const navbar_3 = document.querySelector('.navbar_3');
 const navbar_4 = document.querySelector('.navbar_4');
+
 const variaveis_tipos_de_dados = document.querySelector('.variaveis_tipos_de_dados');
+
 const operadores = document.querySelector('.operadores');
+
 const estruturas_de_controle = document.querySelector('.estruturas_de_controle');
+
 const funcoes_e_escopo = document.querySelector('.funcoes_e_escopo');
 
 // navbar
@@ -59,5 +63,4 @@ navbar_4.addEventListener('click', () => {
         navbar_4.style.color = 'white';
     }
 });
-
 
