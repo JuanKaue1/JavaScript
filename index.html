@@ -1,66 +1,102 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
+    <!-- favicon -->
     <link rel="shortcut icon" href="assets/favicon/js.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/sintaxe_e_estrutura_do_javascript.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/inicio.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 
-<body>
+<body> 
+    <!-- scrollTop -->
+    <button id="scrollToTopBtn" title="Scroll to Top">Top</button>
+    <div id="scrollProgress"></div>
+
     <!-- banner -->
-    <div class="banner">
-        <h1>O que é JavaScript?</h1>
+    <div class="banner-2">
+        <h1>Introdução ao JavaScript</h1>
     </div>
 
-    <!-- navbar -->
+    <!-- Introdução ao JavaScript -->
     <div class="container">
-        <div class="navbar">
-            <!-- <p class="navbar_1">Variaveis e Tipos de dados</p>
-            <p class="navbar_2">Operadores</p>
-            <p class="navbar_3">Estruturas de controle</p>
-            <p class="navbar_4">Funções e escopo</p> -->
-        </div>
-    </div>
-
-    <!--  -->
-    <div class="container">
-        <aside class="variaveis">
-            <p>JavaScript é uma linguagem de programação de alto nível, interpretada e orientada a objetos. É uma das
-                principais tecnologias utilizadas para criar interatividade e funcionalidades em páginas web. </p>
+        <aside class="introducao">
+            <p>
+            <h5>O que é JavaScript?</h5>
+            JavaScript é uma linguagem de programação de alto nível, interpretada e orientada a objetos. É uma das
+            principais tecnologias utilizadas para criar interatividade e funcionalidades em páginas web.
+            </p>
 
             <p>Alguns dos principais tópicos relacionados a JavaScript incluem:</p>
 
+            <p>
             <h5>Sintaxe e estrutura</h5>
-            <p>A sintaxe do JavaScript é semelhante a muitas outras linguagens de programação, com declaração de
-                variáveis, estruturas de controle de fluxo (como if-else, switch-case, loops), funções e objetos. <a
-                    href="./sintaxe_e_estrutura_do_javascript.html">Saiba mais</a></p>
+            A sintaxe do JavaScript é semelhante a muitas outras linguagens de programação, com declaração de
+            variáveis, estruturas de controle de fluxo (como if-else, switch-case, loops), funções e objetos. <a
+                href="./sintaxe_e_estrutura_do_javascript.html">Saiba mais</a>
+            </p>
 
-            <h5>Manipulação do DOM: </h5>
-            <p>O Document Object Model (DOM) representa a estrutura da página HTML em forma de árvore, e o JavaScript
-                permite interagir e modificar elementos do DOM. Isso inclui acessar e modificar atributos, conteúdo e
-                estilos dos elementos, além de adicionar e remover elementos dinamicamente.</p>
-
-        </aside>
-    </div>
-
-    <!--  -->
-    <div class="container">
-        <aside class="variaveis">
+            <p>
             <h5>Manipulação do DOM</h5>
-            <p>A sintaxe do JavaScript é semelhante a muitas outras linguagens de programação, com declaração de
-                variáveis, estruturas de controle de fluxo (como if-else, switch-case, loops), funções e objetos. <a
-                    href="./sintaxe_e_estrutura_do_javascript.html">Saiba mais</a></p>
+            O Document Object Model (DOM) representa a estrutura da página HTML em forma de árvore, e o JavaScript
+            permite interagir e modificar elementos do DOM. Isso inclui acessar e modificar atributos, conteúdo e
+            estilos dos elementos, além de adicionar e remover elementos dinamicamente. <a
+                href="./manipulacao_do_dom.html">Saiba mais</a>
+            </p>
 
-            <h5>Manipulação do DOM: </h5>
-            <p>O Document Object Model (DOM) representa a estrutura da página HTML em forma de árvore, e o JavaScript
-                permite interagir e modificar elementos do DOM. Isso inclui acessar e modificar atributos, conteúdo e
-                estilos dos elementos, além de adicionar e remover elementos dinamicamente.</p>
+            <p>
+            <h5>Eventos</h5>
+            JavaScript permite a manipulação de eventos, como cliques de mouse, pressionamento de teclas e
+            carregamento da página. É possível adicionar listeners de eventos e executar ações específicas quando os
+            eventos ocorrem. <a href="./">Saiba mais</a>
+            </p>
 
+            <p>
+            <h5>AJAX e requisições assíncronas</h5>
+            JavaScript facilita a realização de requisições assíncronas ao servidor utilizando a técnica AJAX
+            (Asynchronous JavaScript and XML). Isso permite carregar dados e atualizar partes da página sem
+            recarregá-la completamente. <a href="./">Saiba mais</a>
+            </p>
+
+            <p>
+            <h5>Manipulação de formulários</h5>
+            Com JavaScript, é possível validar e processar dados de formulários, realizar ações dinâmicas com base
+            nas entradas do usuário e enviar dados para um servidor. <a href="./">Saiba mais</a>
+            </p>
+
+            <p>
+            <h5>Programação assíncrona</h5>
+            JavaScript suporta programação assíncrona por meio de callbacks, Promises e async/await. Isso permite
+            executar tarefas demoradas, como chamadas de API ou acesso a banco de dados, de forma assíncrona para
+            evitar bloqueios no fluxo principal da aplicação. <a href="./">Saiba mais</a>
+            </p>
+
+            <p>
+            <h5>Bibliotecas e frameworks</h5>
+            Existem muitas bibliotecas e frameworks JavaScript populares, como React, Angular, Vue.js e jQuery, que
+            facilitam o desenvolvimento de aplicativos web mais complexos, fornecendo abstrações e funcionalidades
+            adicionais. <a href="./">Saiba mais</a>
+            </p>
+
+            <p>
+            <h5>Manipulação de dados</h5>
+            JavaScript oferece recursos para manipulação de dados, como arrays e objetos. É possível realizar
+            operações de filtragem, iteração e transformação de dados com essas estruturas. <a href="./">Saiba
+                mais</a>
+            </p>
+
+            <p>
+            <h5>Programação orientada a objetos</h5>
+            Embora JavaScript seja uma linguagem baseada em protótipos, a partir do ECMAScript 2015 (ES6), foram
+            adicionados recursos de programação orientada a objetos mais tradicionais, como classes e herança. <a
+                href="./">Saiba mais</a>
+            </p>
         </aside>
     </div>
 
@@ -73,34 +109,10 @@
             <a target="_blank" href="https://www.instagram.com/juank.png/" title="Meu Instagram">Instagram</a>
         </p>
     </footer>
-    <!-- script -->
 
-    <script src="./assets/js/sintaxe_e_estrutura_do_javascript.js"></script>
+    <!-- script -->
+    <script src="./assets/js/scripts.js"></script>
+    <script src="./assets/js/inicio.js"></script>
 </body>
 
 </html>
-
-
-<!-- <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
-    <link rel="shortcut icon" href="assets/favicon/js.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-
-<body>
-    <div class="container container-js">
-        <img src="./assets/img/js_icon.png" alt="JavaScript" id="js_icon" >
-        <p>O que é JavaScript?</p>
-    </div>
-
-    <script src="./assets/js/scripts.js"></script>
-</body>
-
-</html> -->

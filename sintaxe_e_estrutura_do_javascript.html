@@ -1,20 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Variáveis e tipos de dados</title>
+    <!-- favicon -->
     <link rel="shortcut icon" href="assets/favicon/js.png" type="image/x-icon">
+    <!-- css -->
     <link rel="stylesheet" href="assets/css/sintaxe_e_estrutura_do_javascript.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 
 <body>
+    <!-- scrollTop -->
+    <button id="scrollToTopBtn" title="Scroll to Top">Top</button>
+    <div id="scrollProgress"></div>
+    
     <!-- banner -->
     <div class="banner">
         <h1>Sintaxe e estrutura do JavaScript:</h1>
+    </div>
+
+    <!-- back -->
+    <div class="back">
+        <div class="back-span">
+            <img src="./assets/img/home.png" class="back-img" alt="">
+        </div>
     </div>
 
     <!-- navbar -->
@@ -30,44 +44,48 @@
     <!-- Variaveis tipos de dados -->
     <div class="container variaveis_tipos_de_dados">
         <aside class="variaveis">
+            <p>
             <h3>Variáveis</h3>
-            <p>Uma variável em programação é um nome simbólico que representa um local de armazenamento para dados. Ela
-                permite que você armazene, acesse e manipule valores durante a execução de um programa.</p>
+            Uma variável em programação é um nome simbólico que representa um local de armazenamento para dados. Ela
+            permite que você armazene, acesse e manipule valores durante a execução de um programa.</p>
 
             <p>Em JavaScript, existem três palavras-chave principais para declarar variáveis: <b>var</b>, <b>let</b> e
                 <b>const</b>. Vamos explorar cada uma delas e fornecer exemplos de uso:
             </p>
 
+            <p>
             <h5>var</h5>
-            <p>A palavra-chave <b>var</b> foi a forma tradicional de declarar variáveis em JavaScript. Ela tem
-                escopo de função ou, se declarada fora de uma função, escopo global. Isso significa que uma variável
-                declarada com <b>var</b> é acessível em toda a função em que foi declarada ou, se for global, em todo o
-                programa. No entanto, o escopo de var não é limitado a um bloco de código específico. O <b>var</b> sofre
-                elevação (hoisting), o que significa que a declaração da variável é movida para o topo do seu escopo
-                antes da execução do código.
+            A palavra-chave <b>var</b> foi a forma tradicional de declarar variáveis em JavaScript. Ela tem
+            escopo de função ou, se declarada fora de uma função, escopo global. Isso significa que uma variável
+            declarada com <b>var</b> é acessível em toda a função em que foi declarada ou, se for global, em todo o
+            programa. No entanto, o escopo de var não é limitado a um bloco de código específico. O <b>var</b> sofre
+            elevação (hoisting), o que significa que a declaração da variável é movida para o topo do seu escopo
+            antes da execução do código.
             </p>
             <p>Exemplo:</p>
-            <div class="cod_1 container" style="padding: 0;">
+            <div class="img_code_b container" style="padding: 0;">
                 <img src="./assets/img/code_1.png" alt="">
             </div>
+            <p>
             <h5>let</h5>
-            <p>A palavra-chave <b>let</b> é usada para declarar variáveis com escopo de bloco em JavaScript. Com o
-                <b>let</b>, você pode criar variáveis que são acessíveis apenas dentro do bloco em que foram declaradas.
-                Essas variáveis não são elevadas (hoisted) para o topo do escopo e não podem ser redeclaradas no mesmo
-                escopo. O let é útil em loops for para evitar problemas de escopo.
+            A palavra-chave <b>let</b> é usada para declarar variáveis com escopo de bloco em JavaScript. Com o
+            <b>let</b>, você pode criar variáveis que são acessíveis apenas dentro do bloco em que foram declaradas.
+            Essas variáveis não são elevadas (hoisted) para o topo do escopo e não podem ser redeclaradas no mesmo
+            escopo. O let é útil em loops for para evitar problemas de escopo.
             </p>
             <p>Exemplo:</p>
-            <div class="cod_1 container" style="padding: 0;">
+            <div class="img_code_b container" style="padding: 0;">
                 <img src="./assets/img/code_2.png" alt="">
             </div>
+            <p>
             <h5>const</h5>
-            <p>A palavra-chave <b>const</b> também foi introduzida no ES6 e é usada para declarar constantes em
-                JavaScript. Uma constante é uma variável com um valor imutável, ou seja, seu valor não pode ser alterado
-                após a sua atribuição inicial. As constantes também têm escopo de bloco e não sofrem elevação
-                (hoisting). Elas devem ser declaradas e inicializadas ao mesmo tempo, e não podem ser reatribuídas a
-                outro valor posteriormente.</p>
+            A palavra-chave <b>const</b> também foi introduzida no ES6 e é usada para declarar constantes em
+            JavaScript. Uma constante é uma variável com um valor imutável, ou seja, seu valor não pode ser alterado
+            após a sua atribuição inicial. As constantes também têm escopo de bloco e não sofrem elevação
+            (hoisting). Elas devem ser declaradas e inicializadas ao mesmo tempo, e não podem ser reatribuídas a
+            outro valor posteriormente.</p>
             <p>Exemplo:</p>
-            <div class="cod_1 container" style="padding: 0;">
+            <div class="img_code_b container" style="padding: 0;">
                 <img src="./assets/img/code_3.png" alt="">
             </div>
             <p>Em resumo, <b>var</b> é a forma mais antiga de declarar variáveis em JavaScript com escopo de função ou
@@ -76,45 +94,54 @@
                 relação ao escopo e à reatribuição de valores.</p>
         </aside>
         <aside class="tipos_de_dados">
+            <p>
             <h3>Tipos de dados</h3>
-            <p>Tipos de dados são categorias que definem o tipo de valor que uma variável ou uma expressão pode
-                armazenar ou manipular em um programa. Os tipos de dados ajudam a determinar o comportamento e as
-                operações que podem ser realizadas com os valores.</p>
+            Tipos de dados são categorias que definem o tipo de valor que uma variável ou uma expressão pode
+            armazenar ou manipular em um programa. Os tipos de dados ajudam a determinar o comportamento e as
+            operações que podem ser realizadas com os valores.</p>
             <p>Em JavaScript, alguns tipos de dados comuns incluem:</p>
+            <p>
             <h5>Números (Number)</h5>
-            <p>Representam valores numéricos, como inteiros e números de ponto flutuante (decimais).
-                Por exemplo: 5, 3.14, -10.</p>
+            Representam valores numéricos, como inteiros e números de ponto flutuante (decimais).
+            Por exemplo: 5, 3.14, -10.</p>
+            <p>
             <h5>Strings</h5>
-            <p>Representam sequências de caracteres. São definidas entre aspas simples ou duplas. Por exemplo:
-                "Olá", 'Mundo', "123".</p>
+            Representam sequências de caracteres. São definidas entre aspas simples ou duplas. Por exemplo:
+            "Olá", 'Mundo', "123".</p>
+            <p>
             <h5>Booleanos (Boolean)</h5>
-            <p>Representam os valores lógicos verdadeiro (true) e falso (false). São frequentemente
-                usados em expressões condicionais. Por exemplo: true, false.</p>
+            Representam os valores lógicos verdadeiro (true) e falso (false). São frequentemente
+            usados em expressões condicionais. Por exemplo: true, false.</p>
+            <p>
             <h5>Arrays</h5>
-            <p>Representam coleções ordenadas de valores, que podem ser de qualquer tipo de dados. São definidos
-                usando colchetes [] e os elementos são separados por vírgulas. Por exemplo: [1, 2, 3], ['a', 'b', 'c'].
+            Representam coleções ordenadas de valores, que podem ser de qualquer tipo de dados. São definidos
+            usando colchetes [] e os elementos são separados por vírgulas. Por exemplo: [1, 2, 3], ['a', 'b', 'c'].
             </p>
+            <p>
             <h5>Objetos (Object)</h5>
-            <p>São estruturas de dados que permitem agrupar propriedades e métodos relacionados em um
-                único objeto. As propriedades são definidas como pares chave-valor, separados por vírgulas e delimitados
-                por chaves {}. Por exemplo: { nome: 'João', idade: 30 }.</p>
+            São estruturas de dados que permitem agrupar propriedades e métodos relacionados em um
+            único objeto. As propriedades são definidas como pares chave-valor, separados por vírgulas e delimitados
+            por chaves {}. Por exemplo: { nome: 'João', idade: 30 }.</p>
+            <p>
             <h5>Null</h5>
-            <p>Representa a ausência intencional de qualquer valor ou objeto. É um valor especial que indica a
-                ausência de um valor válido. Por exemplo: null.</p>
+            Representa a ausência intencional de qualquer valor ou objeto. É um valor especial que indica a
+            ausência de um valor válido. Por exemplo: null.</p>
+            <p>
             <h5>Undefined</h5>
-            <p>Indica que uma variável foi declarada, mas ainda não foi atribuído nenhum valor a ela. É o
-                valor padrão para variáveis não inicializadas. Por exemplo: undefined.</p>
+            Indica que uma variável foi declarada, mas ainda não foi atribuído nenhum valor a ela. É o
+            valor padrão para variáveis não inicializadas. Por exemplo: undefined.</p>
         </aside>
     </div>
 
-    <!-- operadores -->
+    <!-- Operadores de obejetos -->
     <div class="container operadores">
         <aside class="operadores_1">
-            <h3>Operadores</h3>
 
-            <p>Os operadores em JavaScript são símbolos especiais que executam operações em valores e retornam um
-                resultado. Eles são usados para realizar cálculos matemáticos, comparações, atribuições, lógica booleana
-                e muito mais.</p>
+            <p>
+            <h3>Operadores</h3>
+            Os operadores em JavaScript são símbolos especiais que executam operações em valores e retornam um
+            resultado. Eles são usados para realizar cálculos matemáticos, comparações, atribuições, lógica booleana
+            e muito mais.</p>
 
             <p>Existem vários tipos de operadores em JavaScript:</p>
 
@@ -130,7 +157,7 @@
             <p>
             <h5>Operadores de Comparação: </h5>Compararam dois valores e retornam um valor booleano (verdadeiro ou
             falso). Exemplos incluem igual a (==), estritamente igual a (===), diferente de (!=), estritamente diferente
-            de (!==), maior que (>), menor que (<), maior ou igual a (>=) e menor ou igual a (<=).< /p>
+            de (!==), maior que (>), menor que (<), maior ou igual a (>=) e menor ou igual a (<=). </p>
 
                     <p>
                     <h5>Operadores Lógicos: </h5>São usados para combinar expressões lógicas e retornar um valor
@@ -165,14 +192,14 @@
                 <li><b>If-else:</b>Executa um bloco de código se uma condição for verdadeira e outro bloco se for falsa.
                 </li>
                 Exemplo:
-                <div class="cod_2 container" style="padding: 0;">
+                <div class="img_code_a container" style="padding: 0;">
                     <img src="./assets/img/code_4.png" alt="">
                 </div>
                 <li><b>Switch:</b>Permite testar diferentes casos e executar blocos de código com base no valor de uma
                     expressão.
                 </li>
                 Exemplo:
-                <div class="cod_2 container" style="padding: 0;">
+                <div class="img_code_a container" style="padding: 0;">
                     <img src="./assets/img/code_5.png" alt="">
                 </div>
 
@@ -181,20 +208,20 @@
             <ul>
                 <li><b>For:</b>Executa um bloco de código um número específico de vezes.</li>
                 Exemplo:
-                <div class="cod_2 container" style="padding: 0;">
+                <div class="img_code_a container" style="padding: 0;">
                     <img src="./assets/img/code_6.png" alt="">
                 </div>
                 <li><b>While:</b>Executa um bloco de código enquanto uma condição for verdadeira.
                 </li>
                 Exemplo:
-                <div class="cod_2 container" style="padding: 0;">
+                <div class="img_code_a container" style="padding: 0;">
                     <img src="./assets/img/code_7.png" alt="">
                 </div>
                 <li><b>Do-while:</b>Executa um bloco de código pelo menos uma vez e, em seguida, continua repetindo
                     enquanto uma condição for verdadeira.
                 </li>
                 Exemplo:
-                <div class="cod_2 container" style="padding: 0;">
+                <div class="img_code_a container" style="padding: 0;">
                     <img src="./assets/img/code_8.png" alt="">
                 </div>
 
@@ -203,13 +230,13 @@
             <ul>
                 <li><b>Break:</b>Encerra a execução de um loop ou um bloco de switch.</li>
                 Exemplo:
-                <div class="cod_2 container" style="padding: 0;">
+                <div class="img_code_a container" style="padding: 0;">
                     <img src="./assets/img/code_9.png" alt="">
                 </div>
                 <li><b>Continue:</b>Interrompe a iteração atual de um loop e continua para a próxima iteração.
                 </li>
                 Exemplo:
-                <div class="cod_2 container" style="padding: 0;">
+                <div class="img_code_a container" style="padding: 0;">
                     <img src="./assets/img/code_10.png" alt="">
                 </div>
             </ul>
@@ -236,7 +263,7 @@
                 de qualquer lugar do código, inclusive de dentro de funções.
             </p>
             <p>Exemplo: </p>
-            <div class="cod_1 container" style="padding: 0;">
+            <div class="img_code_b container" style="padding: 0;">
                 <img src="./assets/img/code_11.png" alt="">
             </div>
             <h5>Escopo Local</h5>
@@ -244,13 +271,13 @@
                 dessa função. Elas não são visíveis fora da função.
             <p>Exemplo:</p>
 
-            <div class="cod_1 container" style="padding: 0;">
+            <div class="img_code_b container" style="padding: 0;">
                 <img src="./assets/img/code_12.png" alt="">
             </div>
             <p>Além disso, é importante entender que funções podem acessar variáveis definidas em um escopo superior,
                 mas o contrário não é verdadeiro. Isso é conhecido como closure.</p>
             <p>Exemplo: </p>
-            <div class="cod_1 container" style="padding: 0;">
+            <div class="img_code_b container" style="padding: 0;">
                 <img src="./assets/img/code_13.png" alt="">
             </div>
             <p>No exemplo acima, a função interna <b>innerFunction()</b> tem acesso à variável <b>outerVariable</b>
@@ -268,8 +295,9 @@
             <a target="_blank" href="https://www.instagram.com/juank.png/" title="Meu Instagram">Instagram</a>
         </p>
     </footer>
-    <!-- script -->
 
+    <!-- script -->
+    <script src="./assets/js/scripts.js"></script>
     <script src="./assets/js/sintaxe_e_estrutura_do_javascript.js"></script>
 </body>
 
